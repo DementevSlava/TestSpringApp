@@ -13,7 +13,8 @@
           class="ru.dementev.spring.RockMusic">
     </bean>
     <bean id="musicPlayer"
-          class="ru.dementev.spring.MusicPlayer">
+          class="ru.dementev.spring.MusicPlayer"
+          scope="prototype">
         <property name="music" ref="musicBean"/>
 
         <property name="name" value="${musicPlayer.name}"/>
