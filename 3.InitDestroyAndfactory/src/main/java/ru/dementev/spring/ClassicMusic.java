@@ -1,6 +1,12 @@
 package ru.dementev.spring;
 
 public class ClassicMusic implements Music{
+    private ClassicMusic(){}
+
+    public static ClassicMusic getClassicalMusic(){
+        return new ClassicMusic();
+    }
+
     public void doMyInit(){
         System.out.println("Do my initialization");
     }
